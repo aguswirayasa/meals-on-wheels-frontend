@@ -1,70 +1,108 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+***
 
-In the project directory, you can run:
+# 🍱 Meals on Wheels (MerryMeal)
 
-### `npm start`
+**A Full-Stack Charity Food Delivery Platform**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🔗 Repositories
+*   **Frontend:** [https://github.com/aguswirayasa/meals-on-wheels-frontend](https://github.com/aguswirayasa/meals-on-wheels-frontend)
+*   **Backend:** [https://github.com/aguswirayasa/meals-on-wheels-backend](https://github.com/aguswirayasa/meals-on-wheels-backend)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📖 Project Overview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Meals on Wheels** is a web-based application designed to bridge the gap between charitable organizations, food partners, volunteers, and members (beneficiaries). The platform's primary goal is to ensure that qualified adults who cannot cook for themselves receive hot, nutritious meals delivered to their doorsteps.
 
-### `npm run build`
+The system automates the workflow of meal planning, ordering, preparation, and delivery, while also managing donations and volunteer resources.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Key Features by Role
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The application features a secure **Role-Based Access Control (RBAC)** system with the following distinct user roles:
 
-### `npm run eject`
+### 1. 👤 Member (Beneficiary)
+*   **Registration:** Sign up with proof of eligibility (age/disability/financial status).
+*   **Meal Ordering:** Browse the daily menu provided by partners and request meals.
+*   **Order History:** View past orders and current delivery status.
+*   **Profile Management:** Update dietary restrictions and address details.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 2. 🏪 Partner (Kitchen/Restaurant)
+*   **Menu Management:** Create, update, and delete meal options available for members.
+*   **Order Processing:** Receive incoming meal requests from members.
+*   **Food Safety:** ensure meals meet nutritional and safety standards.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 3. 🚚 Volunteer (Driver/Rider)
+*   **Delivery Management:** View assigned meal deliveries.
+*   **Status Updates:** Update the status of a delivery (e.g., "Picked Up", "Delivered") in real-time.
+*   **Route Information:** Access member address details for delivery.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 4. 🛠️ Administrator
+*   **User Management:** Approve or reject new Member and Partner registrations.
+*   **Oversight:** Monitor all orders, deliveries, and donations.
+*   **Reporting:** Generate reports on donations and meal distributions.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 5. 💰 Donor (Public)
+*   **Donations:** Securely donate funds to support the organization (integrated with payment gateway sandbox).
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 💻 Technologies Used
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project utilizes a decoupled architecture with a React frontend and a Java Spring Boot backend.
 
-### Code Splitting
+### Frontend
+*   **Framework:** React.js
+*   **State Management:** React Hooks / Context API
+*   **Routing:** React Router DOM
+*   **HTTP Client:** Axios
+*   **Styling:** CSS3 / Bootstrap (or Tailwind/MUI based on your specific implementation)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Backend
+*   **Framework:** Java Spring Boot
+*   **Security:** Spring Security with JWT (JSON Web Tokens) for authentication and authorization.
+*   **Database:** MySQL
+*   **ORM:** Hibernate / Spring Data JPA
+*   **API:** RESTful API architecture
 
-### Analyzing the Bundle Size
+### Tools
+*   **Version Control:** Git & GitHub
+*   **API Testing:** Postman
+*   **IDE:** IntelliJ IDEA / VS Code
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🛠️ Getting Started
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+To run the application locally, you must set up both the backend and frontend servers.
 
-### Advanced Configuration
+### Prerequisites
+*   Node.js & npm
+*   Java Development Kit (JDK) 11 or 17
+*   MySQL Server
+*   Maven
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 1. Backend Setup
+1.  Clone the backend repository.
+2.  Configure your database settings in `src/main/resources/application.properties` (update `spring.datasource.username` and `password`).
+3.  Run the application using Maven:
+    ```bash
+    mvn spring-boot:run
+    ```
+4.  The server will start on `http://localhost:8080`.
 
-### Deployment
+### 2. Frontend Setup
+1.  Clone the frontend repository.
+2.  Navigate to the project directory and install dependencies:
+    ```bash
+    npm install
+    ```
+3.  Start the development server:
+    ```bash
+    npm start
+    ```
+4.  The application will run on `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
