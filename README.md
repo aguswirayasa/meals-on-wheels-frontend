@@ -75,34 +75,18 @@ This project utilizes a decoupled architecture with a React frontend and a Java 
 
 ---
 
-## 🛠️ Getting Started
+## 📸 Screen Captures
 
-To run the application locally, you must set up both the backend and frontend servers.
+### 1. Registration
+<img src="https://github.com/aguswirayasa/meals-on-wheels-frontend/blob/master/mow-screen-capture/register.png?raw=true" alt="Registration Page" width="800">
 
-### Prerequisites
-*   Node.js & npm
-*   Java Development Kit (JDK) 11 or 17
-*   MySQL Server
-*   Maven
+### 2. Login
+<img src="https://github.com/aguswirayasa/meals-on-wheels-frontend/blob/master/mow-screen-capture/login.png?raw=true" alt="Login Page" width="800">
 
-### 1. Backend Setup
-1.  Clone the backend repository.
-2.  Configure your database settings in `src/main/resources/application.properties` (update `spring.datasource.username` and `password`).
-3.  Run the application using Maven:
-    ```bash
-    mvn spring-boot:run
-    ```
-4.  The server will start on `http://localhost:8080`.
+### 3. User Profile
+<img src="https://github.com/aguswirayasa/meals-on-wheels-frontend/blob/master/mow-screen-capture/profile.png?raw=true" alt="Profile Page" width="800">
 
-### 2. Frontend Setup
-1.  Clone the frontend repository.
-2.  Navigate to the project directory and install dependencies:
-    ```bash
-    npm install
-    ```
-3.  Start the development server:
-    ```bash
-    npm start
-    ```
-4.  The application will run on `http://localhost:3000`.
+### 4. Partnership Dashboard
+<img src="https://github.com/aguswirayasa/meals-on-wheels-frontend/blob/master/mow-screen-capture/parthership.png?raw=true" alt="Partnership Page" width="800">
 
+---
