@@ -33,12 +33,10 @@ The application features a secure **Role-Based Access Control (RBAC)** system wi
 ### 2. 🏪 Partner (Kitchen/Restaurant)
 *   **Menu Management:** Create, update, and delete meal options available for members.
 *   **Order Processing:** Receive incoming meal requests from members.
-*   **Food Safety:** ensure meals meet nutritional and safety standards.
 
 ### 3. 🚚 Volunteer (Driver/Rider)
 *   **Delivery Management:** View assigned meal deliveries.
 *   **Status Updates:** Update the status of a delivery (e.g., "Picked Up", "Delivered") in real-time.
-*   **Route Information:** Access member address details for delivery.
 
 ### 4. 🛠️ Administrator
 *   **User Management:** Approve or reject new Member and Partner registrations.
